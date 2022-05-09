@@ -1,6 +1,6 @@
 %{
 # visual stimulus trial
--> session.Session
+-> stimulus.Session
 trial_idx                   : int                           # trial index within sessions
 ---
 -> stimulus.Condition
