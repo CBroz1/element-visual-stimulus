@@ -1,3 +1,4 @@
 function open
-stimulus.core.Control.control.openwindow
+Screen('Preference', 'SkipSyncTests', 1);
+stimulus.core.Control.control.openWindow
 end

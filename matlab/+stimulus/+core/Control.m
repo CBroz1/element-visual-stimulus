@@ -108,8 +108,8 @@ classdef Control < handle
             end
         end
         
-        function openwindow(self)
-            self.screen.openwindow
+        function openWindow(self)
+            self.screen.openWindow
             self.screen.enableContrast(false)  % change this when we calibrate monitors
         end
 

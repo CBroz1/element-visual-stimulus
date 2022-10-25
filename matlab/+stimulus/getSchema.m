@@ -1,8 +1,7 @@
 function obj = getSchema
 persistent schemaObject
 if isempty(schemaObject)
-    schemaName = 'visstim';
-    schemaObject = dj.Schema(dj.conn, 'stimulus', schemaName);
+    schemaObject = dj.Schema(dj.conn, 'stimulus', 'u24_stimulus'); % schema, prefix_schema
 end
 obj = schemaObject;
 end

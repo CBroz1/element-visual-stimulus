@@ -73,8 +73,7 @@ classdef Screen < handle
             end
         end
 
-        function openwindow(self) % for demo
-            Screen('Preference', 'SkipSyncTests', 1); % skip tests with demo window
+        function openWindow(self) % for demo
             if ~self.isOpened
                 disp 'Configuring display...'
                 AssertOpenGL
@@ -107,7 +106,6 @@ classdef Screen < handle
                 self.isOpened = true;
             end
         end
-        
         
         function enableContrast(self, yes)
             self.contrastEnabled = yes;
